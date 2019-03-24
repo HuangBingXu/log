@@ -3,9 +3,10 @@
 
 # 官网
 * [OpenCV-Python Tutorials](https://docs.opencv.org/4.0.1/d6/d00/tutorial_py_root.html)
+* **最新的文档，及API可以查看**[OpenCV ](https://docs.opencv.org/master/index.html)
 
 # 博客\文章
-
+* 用Pythond的话，也许可以用这个教程：[OpenCV-Python Tutorials](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_tutorials.html)
 * [OpenCV-Python，计算机视觉开发利器 in juejin](https://juejin.im/post/5bd008495188252af044803b)
 * [OpenCV in hahack](https://www.hahack.com/tags/OpenCV/)
 * [OpenCV in zhihu](https://www.zhihu.com/topic/19587715/hot)
