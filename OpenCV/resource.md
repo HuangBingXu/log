@@ -10,7 +10,10 @@
 * [OpenCV-Python，计算机视觉开发利器 in juejin](https://juejin.im/post/5bd008495188252af044803b)
 * [OpenCV in hahack](https://www.hahack.com/tags/OpenCV/)
 * [OpenCV in zhihu](https://www.zhihu.com/topic/19587715/hot)
-
+* [10分钟上手，OpenCV自然场景文本检测（Python代码+实现）](http://www.cvmart.net/community/article/detail/326)
+* [使用Python+OpenCV进行图像模板匹配(Match Template)](http://bluewhale.cc/2017-09-22/use-python-opencv-for-image-template-matching-match-template.html)
+* [极市开发者平台](http://www.cvmart.net/community)
+* [使用Python + OpenCV来实现脸部和眼睛的检测](http://bluewhale.cc/2017-07-28/use-python-and-opencv-to-detect-faces-and-eyes.html)
 
 https://lizonghang.github.io/2016/07/21/OpenCV%E5%83%8F%E7%B4%A0%E4%B8%8E%E9%80%9A%E9%81%93/
 
