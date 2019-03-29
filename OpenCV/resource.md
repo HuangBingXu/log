@@ -14,6 +14,11 @@
 * [使用Python+OpenCV进行图像模板匹配(Match Template)](http://bluewhale.cc/2017-09-22/use-python-opencv-for-image-template-matching-match-template.html)
 * [极市开发者平台](http://www.cvmart.net/community)
 * [使用Python + OpenCV来实现脸部和眼睛的检测](http://bluewhale.cc/2017-07-28/use-python-and-opencv-to-detect-faces-and-eyes.html)
+* [IT1995](https://blog.csdn.net/qq78442761/article/category/6668919/3?)
+* [OpenCV从入门到转行](https://blog.csdn.net/dcrmg/column/info/13716)
+*  https://www.cnblogs.com/FHC1994/p/9118351.html
+*  
+
 
 https://lizonghang.github.io/2016/07/21/OpenCV%E5%83%8F%E7%B4%A0%E4%B8%8E%E9%80%9A%E9%81%93/
 
