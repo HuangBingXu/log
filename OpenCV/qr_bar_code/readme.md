@@ -1,6 +1,6 @@
 # ref
 * [基于OpenCV Python实现二维码检测与识别](https://cloud.tencent.com/developer/article/1374153)
-
+* https://zhuanlan.zhihu.com/p/40025902
 
 
 

@@ -18,7 +18,7 @@
 * [OpenCV从入门到转行](https://blog.csdn.net/dcrmg/column/info/13716)
 *  https://www.cnblogs.com/FHC1994/p/9118351.html
 *  https://www.cnblogs.com/FHC1994/category/1210553.html
-
+* https://github.com/shekkizh/ImageProcessingProjects
 [中文文档](http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html)
 https://lizonghang.github.io/2016/07/21/OpenCV%E5%83%8F%E7%B4%A0%E4%B8%8E%E9%80%9A%E9%81%93/
 
