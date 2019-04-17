@@ -16,3 +16,37 @@
 HAL_StatusTypeDef HAL_I2C_Mem_Read(I2C_HandleTypeDef *hi2c, uint16_t DevAddress, uint16_t MemAddress, uint16_t MemAddSize, uint8_t *pData, uint16_t Size, uint32_t Timeout)
 ```
 
+
+#### Read BMP180 ID:
+BMP180 add:
+
+![BMP180 add](bmp180_address.png)
+
+ID register:
+
+| register add | value |
+| ------------ | ----- |
+| 0xd0         | 0x55  |
+
+```
+void read_bmp180_id(void)
+{
+  uint8_t er=0,id=0;
+  er = HAL_I2C_Mem_Read(&hi2c1,0xee, 0xd0,1, &id, 1, 1000);
+}
+```
+
+#### read lsm6dsl id
+lsm6dsl add:
+
+![BMP180 add](lsm6dsl_address.png)
+
+
+```
+void lsm6dsl_read_id(void)
+{
+	uint8_t id=0,err = 0;
+	err = HAL_I2C_Mem_Read(&hi2c2, 0x6a<<1, 0x0f, 1, &id, 1,1000);
+	printf("Thd id is:%x,err is:%x\r\n",id,err);
+}
+```
