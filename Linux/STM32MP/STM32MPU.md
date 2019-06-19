@@ -31,3 +31,9 @@ A核方面，ST提供了[OpenSTLinux](https://www.st.com/en/embedded-software/st
 * []()
 
 需要哪一种开发包呢，可以参考[这里](https://wiki.st.com/stm32mpu/wiki/Which_Package_better_suits_your_needs)
+
+
+## SoftWare
+
+[TF-A overview](https://wiki.st.com/stm32mpu/wiki/TF-A_overview)
+[OP-TEE overview](https://wiki.st.com/stm32mpu/wiki/OP-TEE_overview)
