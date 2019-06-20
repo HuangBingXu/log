@@ -1,8 +1,8 @@
 执行make stm32mp15_basic_defconfig编译U-boot的时候碰到这个问题：
 ```
-  HOSTCC  scripts/basic/fixdep
-  HOSTCC  scripts/kconfig/conf.o
-  YACC    scripts/kconfig/zconf.tab.c
+HOSTCC  scripts/basic/fixdep
+HOSTCC  scripts/kconfig/conf.o
+YACC    scripts/kconfig/zconf.tab.c
 /bin/sh: 1: bison: not found
 scripts/Makefile.lib:228: recipe for target 'scripts/kconfig/zconf.tab.c' failed
 make[1]: *** [scripts/kconfig/zconf.tab.c] Error 127

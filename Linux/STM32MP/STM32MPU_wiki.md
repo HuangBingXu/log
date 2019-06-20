@@ -36,12 +36,12 @@ STM32MP15 Discovery kits 硬件介绍:[MB1272](https://wiki.st.com/stm32mpu/wiki
 
 ## [STM32MP1 Developer Package](https://wiki.st.com/stm32mpu/wiki/STM32MP1_Developer_Package)
 * Installing the components to develop software running on Arm Cortex-A
-    *    Installing the SDK
-    *     Installing the Linux kernel
-    *      Installing the U-Boot
-    *       Installing the TF-A
-    *  Installing the OP-TEE
-    *   Installing the debug symbol files
+    * Installing the SDK
+    * Installing the Linux kernel
+    * Installing the U-Boot
+    * Installing the TF-A
+    * Installing the OP-TEE
+    * Installing the debug symbol files
 *  Installing the components to develop software running on Arm Cortex-M4 (STM32Cube MPU Package)
     *  Installing the Eclipse IDE
     *  Installing the STM32Cube MPU Package
