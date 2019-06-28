@@ -37,7 +37,8 @@ QChart::ChartTypeCartesian		A cartesian chart.	笛卡尔坐标系
 QChart::ChartTypePolar			A polar chart.		极坐标细                
 
 
-
+ 6. The chart components can be used as QWidget or QGraphicsWidget objects
+   一个图表（完整的图标，包括QChartView、QChart等），可以用作QWidget或者QGraphicsWidget
 
 
 
