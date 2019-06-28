@@ -6,15 +6,15 @@ QT提供的相关的class有：
 
 ![](img/Cpp_class.png)                 
 
-主要有：
+算了下，一共有48个类，实现一个图表并不需要全部用到，根据所需实现的图标，只需用到当中的几个就行，这些类，大致上可以分为如下几类：
 * [QChartView Class](https://doc.qt.io/qt-5/qchartview.html)
-一个用来显示图表的widget，可以在QChartView上实现所有Qt Chart支持的图表。
+一个用来显示图表的区域，或者理解为画布，可以在QChartView上实现所有Qt Chart支持的图表。
     ```
     QChartView <-- QGraphicsView <-- QAbstractScrollArea <-- QFrame <-- QWidget
     ```
 
 * [QChart](https://doc.qt.io/qt-5/qchart.html)                   
-  QChart是QGraphicsWidget，可以在QGraphicsScene上显示，管理图表中的数据、图例、坐标轴等，
+  QChart是QGraphicsWidget，可以在QGraphicsScene上显示，用来管理图表中的数据、图例、坐标轴等，
   ```
   QChart <-- QGraphicsWidget <-- QGraphicsObject and QGraphicsLayoutItem
   QGraphicsObject  <--  QObject and QGraphicsItem
@@ -39,7 +39,7 @@ QT提供的相关的class有：
 * 图例:               
   基类为[QLegendMarker](https://doc.qt.io/qt-5/qlegendmarker.html),在此基础上派生出不同的图例，如QAreaLegendMarker, QBarLegendMarker, QBoxPlotLegendMarker等
 
-# 二：实现一个最简单的折线图
+# 二、实现一个最简单的折线图
 ### 1、创建一个Qt Widgets Application工程，如下图：
 
 ![](img/create_project.png)
@@ -130,7 +130,9 @@ Dialog::Dialog(QWidget *parent) :
 
 ### 5、实现图表
 QChartView成功添加了后，还要添加管理图表中的序列、坐标轴、图例的QChart，首先添加相关头文件：
-> #include <QChart>
+```
+ #include <QChart>
+```
 
  然后在类定义中添加一个QChart，
 >     QChart *chart;
@@ -192,6 +194,7 @@ Dialog::Dialog(QWidget *parent) :
 ![](img/linechart.png)
 
 到这里就实现了一个最简单的折线图了，
+如果要实现其他的图表，如曲线图，只需要把第6部分的QLineSeries替换成QSplineSeries即可，当然不懂的图表，也许会有些不一样
 
 
 参考：

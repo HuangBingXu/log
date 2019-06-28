@@ -1,6 +1,7 @@
 创建一个QT Console Application
 1、pro文件中添加sql:
 > QT += sql
+
 2、包含相关头文件：
 ```
 #include "QtSql/QSqlDatabase"
@@ -20,10 +21,12 @@
 ```
 执行结果如下：
 
-![](img\sqlite_001.png)
+![](img/sqlite_001.png)
 
 
-执行到open()时，如果这个数据库不存在，则会自动创建；如果已经存在，则后续的操作会在已有的数据库上进行。
+执行到open()时，如果这个数据库不存在，则会自动创建；如果已经存在，则后续的操作会在已有的数据库上进行。用打开文件**testdatabase.db**如下：
+
+![](img/justcreate.png)
 
 
 4、创建table
@@ -40,12 +43,19 @@
         qDebug() << "Table created!";
     }
 ```
-实验结果第一次执行改程序成功，第二次就失败，应该同一个数据库不能重新创建table，
+这里创建一个名为**randdata**的表格，实验结果第一次执行改程序成功，执行的调试信息跟sqlitestudio打开数据库后看到的结果如下：
 
-note：
+![](img/create_table.png)
+
+第二次就失败，应该同一个数据库不能重新创建table，
+
+![](img/recreate_table.png)
+
+
+## note：
 1. QT5.12中默认支持的数据库：
 
-![](img\supported_db.png)
+![](img/supported_db.png)
 
 2、一个sqlite工具：[sqlitestudio](https://sqlitestudio.pl/index.rvt)
 
