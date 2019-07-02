@@ -16,6 +16,23 @@
 
   对应uclass的驱动程序。主要提供uclass操作时，如绑定udevice时的一些操作
 
+
+
+``````mermaid
+
+graph TD
+
+	A[Driver modle] -->B(Uclass)
+
+    A[Driver modle] --> C(Driver)
+
+    A[Driver modle] --> D(Device)
+``````
+
+
+
+
+
 ```
 struct driver {
 	char *name;
@@ -75,3 +92,18 @@ struct udevice {
 };
 ```
 
+
+
+
+
+## derive modle demo
+
+#### cmd demo
+
+> u-boot\cmd\demo.c
+
+该文件实现了一些用来测试driver model demo 的驱动的命令
+
+#### driver demo:
+
+> u-boot\drivers\demo\\*
