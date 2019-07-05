@@ -14,3 +14,4 @@ ASSERT failure in QCoreApplication::sendEvent: “Cannot send events to objects 
 
 
 QT GUI必须工作在主线程，所有部件和几个相关的类（？）不能工作在次线程
+

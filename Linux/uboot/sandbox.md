@@ -18,3 +18,10 @@
 > ./u-boot -d u-boot.dtb
 
 ![](G:\mics\log\log\Linux\uboot\img\run_sandbox.png)
+
+
+
+#### 4 、CPU级代码
+
+> u-boot\arch\sandbox
+

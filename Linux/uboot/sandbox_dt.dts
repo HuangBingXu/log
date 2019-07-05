@@ -1,0 +1,396 @@
+/dts-v1/;
+// magic:		0xd00dfeed
+// totalsize:		0x2d86 (11654)
+// off_dt_struct:	0x78
+// off_dt_strings:	0x1a2c
+// off_mem_rsvmap:	0x28
+// version:		17
+// last_comp_version:	16
+// boot_cpuid_phys:	0x0
+// size_dt_strings:	0x35a
+// size_dt_struct:	0x19b4
+
+/ {
+    #address-cells = <0x00000001>;
+    #size-cells = <0x00000001>;
+    model = "sandbox";
+    aliases {
+        i2c0 = "/i2c@0";
+        pci0 = "/pci-controller";
+        rtc0 = "/i2c@0/rtc@43";
+        axi0 = "/axi@0";
+    };
+    chosen {
+        stdout-path = "/serial";
+    };
+    audio-codec {
+        compatible = "sandbox,audio-codec";
+        #sound-dai-cells = <0x00000001>;
+        phandle = <0x00000006>;
+    };
+    cros-ec {
+        reg = <0x00000000 0x00000069>;
+        u-boot,dm-pre-reloc;
+        compatible = "google,cros-ec-sandbox";
+        flash {
+            u-boot,dm-pre-reloc;
+            image-pos = <0x08000000>;
+            size = <0x00020000>;
+            erase-value = <0x00000000>;
+            ro {
+                image-pos = <0x00000000>;
+                size = <0x0000f000>;
+            };
+            wp-ro {
+                image-pos = <0x0000f000>;
+                size = <0x00001000>;
+            };
+            rw {
+                image-pos = <0x00010000>;
+                size = <0x00010000>;
+            };
+        };
+        keyboard-controller {
+            compatible = "google,cros-ec-keyb";
+            keypad,num-rows = <0x00000008>;
+            keypad,num-columns = <0x0000000d>;
+            google,needs-ghost-filter;
+            linux,keymap = <0x0001007d 0x00060031 0x0102003e 0x01080028 0x0201000f 0x0205001b 0x02090042 0x0304003f 0x04000061 0x0404001f 0x04090026 0x0502002e 0x05060032 0x050b0039 0x06040003 0x0609000a 0x07010010 0x07050017 0x07090018 0x00000000 0x00000001 0x00000003 0x626f782c 0x00000003 0x00000002 0x32303030 0x00000041 0x00000003 0x00001000 0x00006644 0x6770696f 0x00000069 0x00000003 0x626f782c 0x00000004 0x00000002 0x00000004 0x00000004 0x00000001 0x00000000 0x00000102 0x73616e64 0x00000003 0x00000003 0x00000003 0x00000003 0x00000002 0x00000003 0x2d73696d 0x00000140 0x00000004 0x00000001 0x00000004 0x00000004 0x00000008 0x00000003 0x626f782c 0x0000014d 0x0000015d 0x00000004 0x65657072 0x00000004 0x0000000b 0x6f6d0000 0x00000002 0x34330000 0x00000043 0x73616e64 0x00000004 0x00000001 0x00000000 0x00000040 0x73616e64 0x00000001 0x0000000c>;
+            u-boot,dm-pre-reloc;
+        };
+    };
+    ethrawbus {
+        compatible = "sandbox,eth-raw-bus";
+        skip-localhost = <0x00000000>;
+    };
+    eth@10002000 {
+        compatible = "sandbox,eth";
+        reg = <0x10002000 0x000000f1>;
+        fake-host-hwaddr = [00 00 66 44 22 00];
+    };
+    gpios@0 {
+        u-boot,dm-pre-reloc;
+        gpio-controller;
+        compatible = "sandbox,gpio";
+        #gpio-cells = <0x00000001>;
+        gpio-bank-name = "a";
+        sandbox,gpio-count = <0x00000014>;
+        phandle = <0x00000004>;
+    };
+    gpios@1 {
+        u-boot,dm-pre-reloc;
+        gpio-controller;
+        compatible = "sandbox,gpio";
+        #gpio-cells = <0x00000002>;
+        gpio-bank-name = "b";
+        sandbox,gpio-count = <0x0000000a>;
+        phandle = <0x00000007>;
+    };
+    hexagon {
+        compatible = "demo-simple";
+        colour = "white";
+        sides = <0x00000006>;
+    };
+    i2c@0 {
+        #address-cells = <0x00000001>;
+        #size-cells = <0x00000000>;
+        reg = <0x00000000 0x00000041>;
+        compatible = "sandbox,i2c";
+        clock-frequency = <0x00061a80>;
+        pinctrl-names = "default";
+        pinctrl-0 = <0x00000001>;
+        eeprom@2c {
+            reg = <0x0000002c>;
+            compatible = "i2c-eeprom";
+            sandbox,emul = <0x00000002>;
+        };
+        rtc@43 {
+            reg = <0x00000043>;
+            compatible = "sandbox-rtc";
+            sandbox,emul = <0x00000003>;
+        };
+        sandbox_pmic {
+            reg = <0x00000040>;
+            compatible = "sandbox,pmic";
+            buck1 {
+                regulator-name = "SUPPLY_1.2V";
+                regulator-min-microvolt = <0x00124f80>;
+                regulator-max-microvolt = <0x00124f80>;
+                regulator-min-microamp = <0x00030d40>;
+                regulator-max-microamp = <0x00030d40>;
+                regulator-always-on;
+            };
+            buck2 {
+                regulator-name = "SUPPLY_3.3V";
+                regulator-min-microvolt = <0x00325aa0>;
+                regulator-max-microvolt = <0x00325aa0>;
+            };
+            ldo1 {
+                regulator-name = "VDD_EMMC_1.8V";
+                regulator-min-microvolt = <0x001b7740>;
+                regulator-max-microvolt = <0x001b7740>;
+                regulator-min-microamp = <0x000186a0>;
+                regulator-max-microamp = <0x000186a0>;
+                regulator-boot-on;
+            };
+            ldo2 {
+                regulator-name = "VDD_LCD_3.3V";
+                regulator-min-microvolt = <0x00325aa0>;
+                regulator-max-microvolt = <0x00325aa0>;
+            };
+            no_match_by_nodename {
+                regulator-name = "buck_SUPPLY_1.5V";
+                regulator-min-microvolt = <0x0016e360>;
+                regulator-max-microvolt = <0x0016e360>;
+            };
+        };
+        pmic@41 {
+            reg = <0x00000041>;
+            compatible = "fsl,mc34708";
+        };
+        emul {
+            reg = <0x000000ff>;
+            compatible = "sandbox,i2c-emul-parent";
+            emul-eeprom {
+                compatible = "sandbox,i2c-eeprom";
+                sandbox,filename = "i2c.bin";
+                sandbox,size = <0x00000100>;
+                phandle = <0x00000002>;
+            };
+            emul0 {
+                compatible = "sandbox,i2c-rtc";
+                phandle = <0x00000003>;
+            };
+            pmic-emul0 {
+                compatible = "sandbox,i2c-pmic";
+                reg-defaults = <0x0800002d 0x00000002 0x6c310000 0x73616e64>;
+            };
+            pmic-emul1 {
+                compatible = "sandbox,i2c-pmic";
+                reg-defaults = <0x008008ff 0x80180000 0x3a000000 0x00000000 0xffff0000 0x8c006018 0x069c9900 0x00000000 0x00000000 0x00000000 0x361b6006 0x00000000 0x00000002 0x69327300 0x73616e64 0x00000004 0x00000004 0x00000001 0x00000069 0x73616e64 0x00000003 0x00000003 0x00000002 0x00000003 0x2d6c6564 0x6962626c 0x0000024a 0x00000003 0x626f783a 0x6d617274 0x0000000c 0x00000000 0x73616e64 0x00000002 0x636f6e74 0x0000000c 0x70636900 0x70636900 0x00000003 0x00000002 0x02000000 0x00000000 0x20000000 0x00000001 0x00000003 0x67656e65 0x00000065 0x00000000>;
+            };
+        };
+    };
+    i2s {
+        compatible = "sandbox,i2s";
+        #sound-dai-cells = <0x00000001>;
+        phandle = <0x00000005>;
+    };
+    lcd {
+        u-boot,dm-pre-reloc;
+        compatible = "sandbox,lcd-sdl";
+        xres = <0x00000556>;
+        yres = <0x00000300>;
+    };
+    leds {
+        compatible = "gpio-leds";
+        iracibble {
+            gpios = <0x00000004 0x0000000c 0x72656400>;
+            label = "sandbox:red";
+        };
+        martinet {
+            gpios = <0x00000004 0x0000000e 0x67726565>;
+            label = "sandbox:green";
+        };
+    };
+    pci-controller {
+        compatible = "sandbox,pci";
+        device_type = "pci";
+        #address-cells = <0x00000003>;
+        #size-cells = <0x00000002>;
+        ranges = <0x02000000 0x00000000 0x20000000 0x00000001 0x00000003 0x67656e65 0x00000065 0x00000000 0x4031662c 0x00000041 0x2d636173 0x00000002>;
+        pci@1f,0 {
+            compatible = "pci-generic";
+            reg = <0x0000f800 0x00000000 0x30000000 0x73616e64 0x65000000>;
+            emul@1f,0 {
+                compatible = "sandbox,swap-case";
+            };
+        };
+    };
+    pinctrl {
+        compatible = "sandbox,pinctrl";
+        status = "okay";
+        i2c0 {
+            groups = "i2c";
+            function = "i2c";
+            bias-pull-up;
+            phandle = <0x00000001>;
+        };
+        uart0 {
+            groups = "serial_a";
+            function = "serial";
+            phandle = <0x00000008>;
+        };
+        onewire0 {
+            groups = "w1";
+            function = "w1";
+            bias-pull-up;
+            phandle = <0x00000009>;
+        };
+    };
+    reset@1 {
+        compatible = "sandbox,reset";
+    };
+    sound {
+        compatible = "sandbox,sound";
+        cpu {
+            sound-dai = <0x00000005 0x636f6465>;
+        };
+        codec {
+            sound-dai = <0x00000006 0x00000001>;
+        };
+    };
+    spi@0 {
+        u-boot,dm-pre-reloc;
+        #address-cells = <0x00000001>;
+        #size-cells = <0x00000000>;
+        reg = <0x00000000 0x00000041>;
+        compatible = "sandbox,spi";
+        cs-gpios = <0x00000000 0x666c6173 0x00000069>;
+        flash@0 {
+            u-boot,dm-pre-reloc;
+            reg = <0x00000000>;
+            compatible = "spansion,m25p16", "sandbox,spi-flash";
+            spi-max-frequency = <0x02625a00>;
+            sandbox,filename = "spi.bin";
+        };
+    };
+    spl-test {
+        u-boot,dm-pre-reloc;
+        compatible = "sandbox,spl-test";
+        boolval;
+        intval = <0x00000001>;
+        intarray = <0x00000002 0x00000001 0x00000001>;
+        byteval = [05];
+        bytearray = [06];
+        longbytearray = [09 0a 0b 0c 0d 0e 0f 10 11];
+        stringval = "message";
+        stringarray = "multi-word", "message";
+    };
+    spl-test2 {
+        u-boot,dm-pre-reloc;
+        compatible = "sandbox,spl-test";
+        intval = <0x00000003>;
+        intarray = <0x00000005>;
+        byteval = [08];
+        bytearray = [01 23 34];
+        longbytearray = <0x090a0b0c>;
+        stringval = "message2";
+        stringarray = "another", "multi-word", "message";
+    };
+    spl-test3 {
+        u-boot,dm-pre-reloc;
+        compatible = "sandbox,spl-test";
+        stringarray = "one";
+    };
+    spl-test4 {
+        u-boot,dm-pre-reloc;
+        compatible = "sandbox,spl-test.2";
+    };
+    square {
+        compatible = "demo-shape";
+        colour = "blue";
+        sides = <0x00000004>;
+    };
+    timer {
+        compatible = "sandbox,timer";
+        clock-frequency = <0x000f4240>;
+    };
+    tpm {
+        u-boot,dm-pre-reloc;
+        compatible = "google,sandbox-tpm";
+    };
+    tpm2 {
+        compatible = "sandbox,tpm2";
+    };
+    triangle {
+        compatible = "demo-shape";
+        colour = "cyan";
+        sides = <0x00000003>;
+        character = <0x00000053>;
+        light-gpios = <0x00000004 0x00000000 0x616c0000 0x00000003 0x626f782c>;
+    };
+    serial {
+        u-boot,dm-spl;
+        compatible = "sandbox,serial";
+        sandbox,text-colour = "cyan";
+        pinctrl-names = "default";
+        pinctrl-0 = <0x00000008>;
+    };
+    usb@0 {
+        compatible = "sandbox,usb";
+        status = "disabled";
+        hub {
+            compatible = "sandbox,usb-hub";
+            #address-cells = <0x00000001>;
+            #size-cells = <0x00000000>;
+            flash-stick {
+                reg = <0x00000000>;
+                compatible = "sandbox,usb-flash";
+            };
+        };
+    };
+    usb@1 {
+        compatible = "sandbox,usb";
+        hub {
+            compatible = "usb-hub";
+            usb,device-class = <0x00000009>;
+            hub-emul {
+                compatible = "sandbox,usb-hub";
+                #address-cells = <0x00000001>;
+                #size-cells = <0x00000000>;
+                flash-stick {
+                    reg = <0x00000000>;
+                    compatible = "sandbox,usb-flash";
+                    sandbox,filepath = "flash.bin";
+                };
+            };
+        };
+    };
+    usb@2 {
+        compatible = "sandbox,usb";
+        status = "disabled";
+    };
+    spmi@0 {
+        compatible = "sandbox,spmi";
+        #address-cells = <0x00000001>;
+        #size-cells = <0x00000001>;
+        pm8916@0 {
+            compatible = "qcom,spmi-pmic";
+            reg = <0x00000000 0x00000000>;
+            #address-cells = <0x00000001>;
+            #size-cells = <0x00000001>;
+            gpios@c000 {
+                compatible = "qcom,pm8916-gpio";
+                reg = <0x0000c000 0x00000102>;
+                gpio-controller;
+                gpio-count = <0x00000004>;
+                #gpio-cells = <0x00000002>;
+                gpio-bank-name = "spmi";
+            };
+        };
+    };
+    axi@0 {
+        compatible = "sandbox,axi";
+        #address-cells = <0x00000001>;
+        #size-cells = <0x00000001>;
+        store@0 {
+            compatible = "sandbox,sandbox_store";
+            reg = <0x00000000 0x00000001>;
+        };
+    };
+    onewire {
+        compatible = "w1-gpio";
+        gpios = <0x00000004 0x0000015d>;
+        pinctrl-names = "default";
+        pinctrl-0 = <0x00000009>;
+        status = "okay";
+        sandbox_eeprom@0 {
+            compatible = "sandbox,w1-eeprom";
+            status = "okay";
+        };
+    };
+    sandbox_tee {
+        compatible = "sandbox,tee";
+    };
+};
