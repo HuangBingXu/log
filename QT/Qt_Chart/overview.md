@@ -64,7 +64,10 @@ QT提供的相关的class有：
 ### 3、添加chart库
 * 编辑pro文件：
   
+
 ![](img/edit_pro_file.png)
+
+> QT += charts
 
 * 在 **.h**声明命名空间(这里在dialog.h中添加)
   
