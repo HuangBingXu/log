@@ -38,6 +38,18 @@ graph TD
 
 
 
+```
+/**
+ * struct udevice_id - Lists the compatible strings supported by a driver
+ * @compatible: Compatible string
+ * @data: Data for this compatible string
+ */
+struct udevice_id {
+	const char *compatible;
+	ulong data;
+};
+```
+
 
 
 ```

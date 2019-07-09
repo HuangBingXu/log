@@ -1,0 +1,77 @@
+halin@halin-ThinkPad-X240:/media/halin$ ls -al
+total 12
+drwxr-x---+  6 root root 4096 7月   9 16:39 .
+drwxr-xr-x   3 root root 4096 6月   6  2018 ..
+drwxr-xr-x  18 root root 1024 3月   5 01:50 bootfs
+drwxr-xr-x  20 root root 1024 3月   4 20:30 rootfs
+drwxr-xr-x   7 root root 1024 3月   5 01:49 userfs
+drwxr-xr-x   4 root root 1024 3月   5 01:50 vendorfs
+halin@halin-ThinkPad-X240:/media/halin$ ls -al bootfs/
+total 7051
+drwxr-xr-x  18 root root    1024 3月   5 01:50 .
+drwxr-x---+  6 root root    4096 7月   9 16:39 ..
+-rwxr-xr-x   1 root root    1553 3月   9  2018 boot.scr.uimg
+drwx------   2 root root   12288 3月   5 01:50 lost+found
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc0_stm32mp157a-dk1_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc0_stm32mp157a-dk1-optee_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc0_stm32mp157c-dk2_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc0_stm32mp157c-dk2-optee_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc0_stm32mp157c-ed1_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc0_stm32mp157c-ed1-optee_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc0_stm32mp157c-ev1_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc0_stm32mp157c-ev1-optee_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc1_stm32mp157c-ed1_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc1_stm32mp157c-ed1-optee_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc1_stm32mp157c-ev1_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 mmc1_stm32mp157c-ev1-optee_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 nand0_stm32mp157c-ev1_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 nor0-mmc1_stm32mp157c-ev1_extlinux
+drwxr-xr-x   2 root root    1024 3月   9  2018 nor0_stm32mp157c-ev1_extlinux
+-rw-r--r--   1 root root   46180 3月   9  2018 splash.bmp
+-rw-r--r--   1 root root   67753 3月   9  2018 stm32mp157a-dk1.dtb
+-rw-r--r--   1 root root   69558 3月   9  2018 stm32mp157c-dk2-a7-examples.dtb
+-rw-r--r--   1 root root   69510 3月   9  2018 stm32mp157c-dk2.dtb
+-rw-r--r--   1 root root   70485 3月   9  2018 stm32mp157c-dk2-m4-examples.dtb
+-rw-r--r--   1 root root   64766 3月   9  2018 stm32mp157c-ed1.dtb
+-rw-r--r--   1 root root   74489 3月   9  2018 stm32mp157c-ev1-a7-examples.dtb
+-rw-r--r--   1 root root   74445 3月   9  2018 stm32mp157c-ev1.dtb
+-rw-r--r--   1 root root   75241 3月   9  2018 stm32mp157c-ev1-m4-examples.dtb
+-rw-r--r--   1 root root 6569464 3月   9  2018 uImage
+halin@halin-ThinkPad-X240:/media/halin$ ls -al rootfs/
+total 47
+drwxr-xr-x  20 root root  1024 3月   4 20:30 .
+drwxr-x---+  6 root root  4096 7月   9 16:39 ..
+drwxr-xr-x   2 root root  5120 3月   9  2018 bin
+drwxr-xr-x   2 root root  1024 3月   9  2018 boot
+drwxr-xr-x   2 root root  1024 3月   9  2018 dev
+drwxr-xr-x  44 root root  4096 3月   4 20:30 etc
+drwxr-xr-x   3 root root  1024 3月   9  2018 home
+drwxr-xr-x  12 root root  4096 3月   9  2018 lib
+drwx------   2 root root 12288 3月   5 02:09 lost+found
+drwxr-xr-x   2 root root  1024 3月   9  2018 media
+drwxr-xr-x   2 root root  1024 3月   9  2018 mnt
+dr-xr-xr-x   2 root root  1024 3月   9  2018 proc
+drwxr-xr-x   5 root root  1024 3月   4 21:02 root
+drwxr-xr-x   2 root root  1024 3月   9  2018 run
+drwxr-xr-x   3 root root  4096 3月   9  2018 sbin
+dr-xr-xr-x   2 root root  1024 3月   9  2018 sys
+drwxrwxrwt   2 root root  1024 3月   9  2018 tmp
+drwxr-xr-x  11 root root  1024 3月   9  2018 usr
+drwxr-xr-x   9 root root  1024 3月   4 20:30 var
+drwxr-xr-x   2 root root  1024 3月   9  2018 vendor
+halin@halin-ThinkPad-X240:/media/halin$ ls -al userfs/
+total 21
+drwxr-xr-x  7 root root  1024 3月   5 01:49 .
+drwxr-x---+ 6 root root  4096 7月   9 16:39 ..
+drwxr-xr-x  4 root root  1024 3月   9  2018 Cube-M4-examples
+drwxr-xr-x  5 root root  1024 3月   9  2018 demo
+drwxr-xr-x  5 root root  1024 3月   9  2018 Linux-A7-examples
+drwx------  2 root root 12288 3月   5 01:49 lost+found
+drwxr-xr-x  2 root root  1024 3月   9  2018 weston-start-at-startup
+halin@halin-ThinkPad-X240:/media/halin$ ls -al vendorfs/
+total 18
+drwxr-xr-x  4 root root  1024 3月   5 01:50 .
+drwxr-x---+ 6 root root  4096 7月   9 16:39 ..
+drwxr-xr-x  2 root root  1024 3月   9  2018 lib
+drwx------  2 root root 12288 3月   5 01:50 lost+found
+halin@halin-ThinkPad-X240:/media/halin$ 

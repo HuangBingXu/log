@@ -175,6 +175,8 @@ Dialog::Dialog(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->setupUi(this);
+
     chart = new QChart();
 
     QLineSeries* series = new QLineSeries();
@@ -184,8 +186,10 @@ Dialog::Dialog(QWidget *parent) :
     series->append(8,10);
     series->append(10,12);
 
-    chart->addSeries(series);
 
+
+    chart->addSeries(series);
+    chart->createDefaultAxes();
 
     ChartView = new QChartView(this);
     ChartView->setChart(chart);
