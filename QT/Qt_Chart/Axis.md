@@ -195,9 +195,6 @@ Dialog::Dialog(QWidget *parent) :
         temp_max_series->append(Time.toMSecsSinceEpoch(),daily_temp_max[i]);
     }
 
-
-
-
     chart = new QChart();
     chart->addSeries(temp_max_series);
 
