@@ -24,5 +24,12 @@
 
 
 
-qwt_designer_plugin.dll --> Qt\Qt5.12.2\Tools\QtCreator\bin\plugins\designer --> QT Creater
-                            \Qt\Qt5.12.2\5.12.2\mingw73_64\plugins\designer  --> Designer 5.12.2 (MinGW 7.3.0 64-bit)
+qwt_designer_plugin.dll：               
+    Qt\Qt5.12.2\Tools\QtCreator\bin\plugins\designer --> QT Creater                               
+    Qt\Qt5.12.2\5.12.2\mingw73_64\plugins\designer  --> Designer 5.12.2 (MinGW 7.3.0 64-bit)
+
+qwt.dll 和 qwtd.dll :
+    D:\Qt\Qt5.9.2\5.9.2\mingw53_32\bin
+
+libqwt.a、libqwtd.a
+    D:\Qt\Qt5.9.2\5.9.2\mingw53_32\lib
