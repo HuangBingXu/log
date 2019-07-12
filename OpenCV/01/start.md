@@ -40,7 +40,7 @@ cv2.error: OpenCV(4.0.0) C:\projects\opencv-python\opencv\modules\highgui\src\wi
 ```
 import cv2 as cv
 
-img = cv.imread("D:\test.jpg")
+img = cv.imread("D:\\test.jpg")
 if img is not None:
     print(img)
     cv.namedWindow("Image")
