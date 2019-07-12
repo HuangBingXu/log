@@ -1,0 +1,115 @@
+15:20:09 : Read TSV File: G:\ST\STM32MP\sdk\stm32mp1-openstlinux-4.19-thud-mp1-19-02-20\images\stm32mp1\flashlayout_st-image-weston\FlashLayout_sdcard_stm32mp157c-dk2-basic.tsv
+
+15:20:09 : Number of partitions: 9
+
+15:23:42 : Start Embedded Flashing service
+15:23:42 : Memory Programming ...
+15:23:42 : Opening and parsing file: tf-a-stm32mp157c-dk2-trusted.stm32
+15:23:42 :   File          : tf-a-stm32mp157c-dk2-trusted.stm32
+15:23:42 :   Size          : 245360 Bytes
+15:23:42 :   Partition ID  : 0x01 
+15:23:42 : Download in Progress:
+15:23:43 : File download complete
+15:23:43 : Time elapsed during download operation: 00:00:00.823
+15:23:43 : RUNNING Program ... 
+15:23:43 :   PartID:      :0x01 
+15:23:43 : Start operation done successfully at partition 0x01
+15:23:43 : Flashlayout Programming ...
+15:23:43 : Running Flashlayout Partition ...
+15:23:43 : Flashlayout partition started successfully
+15:23:43 : Memory Programming ...
+15:23:43 : Opening and parsing file: u-boot-stm32mp157c-dk2-trusted.stm32
+15:23:43 :   File          : u-boot-stm32mp157c-dk2-trusted.stm32
+15:23:43 :   Size          : 748660 Bytes
+15:23:43 :   Partition ID  : 0x03 
+15:23:43 : Download in Progress:
+15:23:45 : File download complete
+15:23:45 : Time elapsed during download operation: 00:00:01.282
+15:23:45 : RUNNING Program ... 
+15:23:45 :   PartID:      :0x03 
+15:23:45 : reconnecting the device ...
+15:23:51 : USB speed   : High Speed (480MBit/s)
+15:23:51 : Manuf. ID   : STMicroelectronics
+15:23:51 : Product ID  : USB download gadget@Device ID /0x500, @Revision ID /0x0000
+15:23:51 : SN          : 002A00353338510939303435
+15:23:51 : FW version  : 0x0110
+15:23:51 : Device ID   : 0x0500
+15:23:51 : Start operation done successfully at partition 0x03
+15:23:51 : Memory Programming ...
+15:23:51 : Opening and parsing file: u-boot-spl.stm32-stm32mp157c-dk2-basic
+15:23:51 :   File          : u-boot-spl.stm32-stm32mp157c-dk2-basic
+15:23:51 :   Size          : 120489 Bytes
+15:23:51 :   Partition ID  : 0x04 
+15:23:51 : Download in Progress:
+15:23:51 : File download complete
+15:23:51 : Time elapsed during download operation: 00:00:00.150
+15:23:51 : RUNNING Program ... 
+15:23:51 :   PartID:      :0x04 
+15:23:51 : Start operation done successfully at partition 0x04
+15:23:51 : Memory Programming ...
+15:23:51 : Opening and parsing file: u-boot-spl.stm32-stm32mp157c-dk2-basic
+15:23:51 :   File          : u-boot-spl.stm32-stm32mp157c-dk2-basic
+15:23:51 :   Size          : 120489 Bytes
+15:23:51 :   Partition ID  : 0x05 
+15:23:51 : Download in Progress:
+15:23:52 : File download complete
+15:23:52 : Time elapsed during download operation: 00:00:00.150
+15:23:52 : RUNNING Program ... 
+15:23:52 :   PartID:      :0x05 
+15:23:52 : Start operation done successfully at partition 0x05
+15:23:52 : Memory Programming ...
+15:23:52 : Opening and parsing file: u-boot-stm32mp157c-dk2-basic.img
+15:23:52 :   File          : u-boot-stm32mp157c-dk2-basic.img
+15:23:52 :   Size          : 752064 Bytes
+15:23:52 :   Partition ID  : 0x06 
+15:23:52 : Download in Progress:
+15:23:53 : File download complete
+15:23:53 : Time elapsed during download operation: 00:00:01.165
+15:23:53 : RUNNING Program ... 
+15:23:53 :   PartID:      :0x06 
+15:23:53 : Start operation done successfully at partition 0x06
+15:23:53 : Memory Programming ...
+15:23:53 : Opening and parsing file: st-image-bootfs-openstlinux-weston-stm32mp1.ext4
+15:23:54 :   File          : st-image-bootfs-openstlinux-weston-stm32mp1.ext4
+15:23:54 :   Size          : 64 MBytes
+15:23:54 :   Partition ID  : 0x21 
+15:23:54 : Download in Progress:
+15:25:18 : File download complete
+15:25:18 : Time elapsed during download operation: 00:01:24.574
+15:25:18 : RUNNING Program ... 
+15:25:18 :   PartID:      :0x21 
+15:25:18 : Start operation done successfully at partition 0x21
+15:25:18 : Memory Programming ...
+15:25:18 : Opening and parsing file: st-image-vendorfs-openstlinux-weston-stm32mp1.ext4
+15:25:18 :   File          : st-image-vendorfs-openstlinux-weston-stm32mp1.ext4
+15:25:18 :   Size          : 16 MBytes
+15:25:18 :   Partition ID  : 0x22 
+15:25:18 : Download in Progress:
+15:25:40 : File download complete
+15:25:40 : Time elapsed during download operation: 00:00:21.847
+15:25:40 : RUNNING Program ... 
+15:25:40 :   PartID:      :0x22 
+15:25:40 : Start operation done successfully at partition 0x22
+15:25:40 : Memory Programming ...
+15:25:40 : Opening and parsing file: st-image-weston-openstlinux-weston-stm32mp1.ext4
+15:25:51 :   File          : st-image-weston-openstlinux-weston-stm32mp1.ext4
+15:25:51 :   Size          : 506324 KBytes
+15:25:51 :   Partition ID  : 0x23 
+15:25:51 : Download in Progress:
+15:37:08 : File download complete
+15:37:08 : Time elapsed during download operation: 00:11:17.347
+15:37:08 : RUNNING Program ... 
+15:37:08 :   PartID:      :0x23 
+15:37:09 : Start operation done successfully at partition 0x23
+15:37:09 : Memory Programming ...
+15:37:09 : Opening and parsing file: st-image-userfs-openstlinux-weston-stm32mp1.ext4
+15:37:10 :   File          : st-image-userfs-openstlinux-weston-stm32mp1.ext4
+15:37:10 :   Size          : 95836 KBytes
+15:37:10 :   Partition ID  : 0x24 
+15:37:10 : Download in Progress:
+15:39:11 : File download complete
+15:39:11 : Time elapsed during download operation: 00:02:01.594
+15:39:11 : RUNNING Program ... 
+15:39:11 :   PartID:      :0x24 
+15:39:12 : Start operation done successfully at partition 0x24
+15:39:12 : Flashing service completed successfully

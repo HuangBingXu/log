@@ -29,3 +29,17 @@
 * vendorfs
 
   ![](sd/vendorfs.png)
+
+
+
+
+
+从SD卡启动的原理（猜想）：
+
+1. bootrom 从SD读取二进制数据的FSBL，没有文件系统，
+2. FSBL再从SD卡读取SSBL，也是没有文件系统
+3. FSBL是在DRAM跑的，可是实现比较复杂的应用，所以可以支持文件系统，所以FSBL从SD卡中的分区表读取其他的启动信息根内核，启动内核
+
+
+
+那怎么从SD卡中定位FSBL、SSBL？
