@@ -1,3 +1,5 @@
+1.
+
 ```
 ENTRY(_start)
 SECTIONS
@@ -14,6 +16,8 @@ SECTIONS
 		*(.glue*)
 	}
 ```
+
+
 
 **ENTRY(_start)**表示程序入口为**_start**,该入口在文件**vectors.S**中，定义了些异常向量
 
@@ -49,3 +53,18 @@ SECTIONS
 >		CPUDIR/start.o (.text*)
 表示该代码段内容为start.s中的内容，具体在：**u-boot-2018.11\arch\arm\cpu\armv7\start.S**
 
+
+
+
+
+LDS语法：
+
+ OUTPUT_FORMAT("elf32-littlearm", "elf32-littlearm", "elf32-littlearm")
+/*指定输出可执行文件是elf格式,32位ARM指令,小端*/
+
+OUTPUT_ARCH(arm)
+/*指定输出可执行文件的平台为ARM*/
+
+ENTRY(_start)
+/*指定输出可执行文件的起始代码段为_start*/
+ENTRY(symbol): 設定某個symbol為程式執行的第一個指令起始點

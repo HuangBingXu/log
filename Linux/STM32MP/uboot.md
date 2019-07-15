@@ -33,3 +33,10 @@ CPU上电（复位）后运行的第一段代码，
 [Modifying_the_U-Boot](https://wiki.st.com/stm32mpu/wiki/How_to_cross-compile_with_the_Developer_Package#Modifying_the_U-Boot)
 
 
+
+
+
+参考：
+
+[U-Boot overview](https://wiki.st.com/stm32mpu/wiki/U-Boot_overview)
+
