@@ -130,3 +130,4 @@ _start:
 
 参考：
 [六、uboot 代码流程分析---start.S](https://www.cnblogs.com/kele-dad/p/8986695.html)
+
