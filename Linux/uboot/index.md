@@ -8,3 +8,9 @@
 * 移植
 * 编译、makefile、配置等
 
+
+
+
+
+**.config**文件是根据make menuconfig生成的
+
