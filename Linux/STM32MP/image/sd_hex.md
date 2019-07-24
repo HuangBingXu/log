@@ -173,7 +173,15 @@ GPT头，下图是STM32MPU1 SD卡中的LBA 1中的数据：
 
 * **Unified Extensible Firmware Interface Specification** 
 
-
+* [GPT磁盘介绍](https://blog.csdn.net/yxwmzouzou/article/details/7931326)
+* [[UEFI实战](http://www.cppblog.com/djxzh/archive/2011/10/02/157325.html)](http://www.cppblog.com/djxzh/archive/2016/03/19/157325.html#213071)
+* [Windows GPT磁盘GUID结构详解](https://www.dell.com/community/%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E5%92%8C%E4%BF%9D%E6%8A%A4-%E8%B5%84%E6%96%99%E6%96%87%E6%A1%A3/Windows-GPT%E7%A3%81%E7%9B%98GUID%E7%BB%93%E6%9E%84%E8%AF%A6%E8%A7%A3/ta-p/7184739)
+* [主引导记录](https://zh.wikipedia.org/wiki/%E4%B8%BB%E5%BC%95%E5%AF%BC%E8%AE%B0%E5%BD%95)
+* [全局唯一标识分区表](https://zh.wikipedia.org/wiki/GUID%E7%A3%81%E7%A2%9F%E5%88%86%E5%89%B2%E8%A1%A8)
+* [GPT分区表](https://caibaoz.com/blog/2013/08/24/guid-partition-table/)
+* [A Quick Tour of GUID Partition Table (GPT)](https://metebalci.com/blog/a-quick-tour-of-guid-partition-table-gpt/)
+* [Disk Format](https://www.chromium.org/chromium-os/chromiumos-design-docs/disk-format#TOC-Selecting-the-kernel)
+* [GUID Partition Table](https://en.wikipedia.org/wiki/GUID_Partition_Table)
 
 ##### PS
 
