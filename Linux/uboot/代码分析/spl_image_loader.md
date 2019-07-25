@@ -96,7 +96,6 @@ SPL_LOAD_IMAGE_METHOD("MMC2_2", 0, BOOT_DEVICE_MMC2_2, spl_mmc_load_image);
 
 
 <h4 id="SPL_LOAD_IMAGE">SPL_LOAD_IMAGE</h4>
-
 ```
 /* Declare an SPL image loader */
 #define SPL_LOAD_IMAGE(__name)					\
@@ -172,4 +171,8 @@ graph TD
 
 
 
+SD卡驱动：
 
+* block device，块设备
+* part  分区信息(u-boot-2018.11_change\disk\part.c)
+* spl_mmc(u-boot-2018.11_change\common\spl\spl_mmc.c)
