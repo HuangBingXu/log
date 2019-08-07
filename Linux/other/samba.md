@@ -42,4 +42,3 @@ https://www.cnblogs.com/phinecos/archive/2009/06/06/1497717.html
 
   > sudo /etc/init.d/samba restart
 
-NFS:
