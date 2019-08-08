@@ -2,8 +2,9 @@
 
 
 
-[HelloGithub][https://hellogithub.com/]
+[HelloGithub](https://hellogithub.com/)
 
 
 
 MNIST（手写数字识别）
+
