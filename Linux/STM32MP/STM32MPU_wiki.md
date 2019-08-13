@@ -12,7 +12,7 @@
 
 * Develop on Arm® Cortex®-A7
     * 安装SDK-安装交叉编译工具及一些库：[Install the SDK-EV1](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157x-EV1/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Install_the_SDK)、[Install the SDK-DK2](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Install_the_SDK)
-  
+    
     * 创建一个简单的Hello World应用程序：创建一个简单的GTK程序：[Create a simple hello-world application-DK2](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Create_a_simple_hello-world_application)、[Create a simple hello-world application-EV1](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157x-EV1/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Create_a_simple_hello-world_application)
     * 修改、编译、更新内核：[Modify, rebuild and reload the Linux® kernel-DK2](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157C-DK2/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel)、[Modify, rebuild and reload the Linux® kernel-EV1](https://wiki.st.com/stm32mpu/wiki/Getting_started/STM32MP1_boards/STM32MP157x-EV1/Develop_on_Arm%C2%AE_Cortex%C2%AE-A7/Modify,_rebuild_and_reload_the_Linux%C2%AE_kernel)
 
@@ -26,13 +26,15 @@
 
 [STM32MP157X-DKX - hardware description](https://wiki.st.com/stm32mpu/wiki/STM32MP157X-DKX_-_hardware_description)
 
-STM32MP15 Discovery kits 硬件介绍:[MB1272](https://wiki.st.com/stm32mpu/wiki/MB1272)
-<!-- 
+STM32MP15 Discovery kits 硬件介绍:
+
+[MB1272](https://wiki.st.com/stm32mpu/wiki/MB1272)
+
 ![](https://wiki.st.com/stm32mpu/nsfr_img_auth.php/thumb/8/8d/MB1272_front_side.png/800px-MB1272_front_side.png)
 
 ![](https://wiki.st.com/stm32mpu/nsfr_img_auth.php/thumb/8/8e/MB1272_back_side.png/800px-MB1272_back_side.png)
 
- -->
+ 
 
 ## [STM32MP1 Developer Package](https://wiki.st.com/stm32mpu/wiki/STM32MP1_Developer_Package)
 * Installing the components to develop software running on Arm Cortex-A
