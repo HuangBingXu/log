@@ -176,3 +176,69 @@ SD卡驱动：
 * block device，块设备
 * part  分区信息(u-boot-2018.11_change\disk\part.c)
 * spl_mmc(u-boot-2018.11_change\common\spl\spl_mmc.c)
+
+
+
+
+
+```
+struct spl_image_info {
+	const char *name;
+	u8 os;
+	uintptr_t load_addr;
+	uintptr_t entry_point;
+#if CONFIG_IS_ENABLED(LOAD_FIT)
+	void *fdt_addr;
+#endif
+	u32 boot_device;
+	u32 size;
+	u32 flags;
+	void *arg;
+};
+```
+
+
+
+
+
+```
+struct spl_image_loader {
+#ifdef CONFIG_SPL_LIBCOMMON_SUPPORT
+	const char *name;
+#endif
+	uint boot_device;
+	/**
+	 * load_image() - Load an SPL image
+	 *
+	 * @spl_image: place to put image information
+	 * @bootdev: describes the boot device to load from
+	 */
+	int (*load_image)(struct spl_image_info *spl_image,
+			  struct spl_boot_device *bootdev);
+};
+```
+
+
+
+
+
+```
+typedef struct disk_partition {
+	lbaint_t	start;	/* # of first block in partition	*/
+	lbaint_t	size;	/* number of blocks in partition	*/
+	ulong	blksz;		/* block size in bytes			*/
+	uchar	name[PART_NAME_LEN];	/* partition name			*/
+	uchar	type[PART_TYPE_LEN];	/* string type description		*/
+	int	bootable;	/* Active/Bootable flag is set		*/
+#if CONFIG_IS_ENABLED(PARTITION_UUIDS)
+	char	uuid[UUID_STR_LEN + 1];	/* filesystem UUID as string, if exists	*/
+#endif
+#ifdef CONFIG_PARTITION_TYPE_GUID
+	char	type_guid[UUID_STR_LEN + 1];	/* type GUID as string, if exists	*/
+#endif
+#ifdef CONFIG_DOS_PARTITION
+	uchar	sys_ind;	/* partition type 			*/
+#endif
+} disk_partition_t;
+```
+
